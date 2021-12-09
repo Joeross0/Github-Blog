@@ -53,8 +53,6 @@ h1{
 .sun{
     position: absolute;
     top: 40%;
-    margin-left: 50%;
-    margin-right: 50%
 }
 
 .mountain{
@@ -66,10 +64,9 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     left: 0;
+    top: 0;
 }
 
 .cloud{
     position: relative;
-
-    border: 1px solid #000000;
 }

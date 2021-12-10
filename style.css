@@ -13,6 +13,7 @@ a{
     color: #23F788;
     padding: .5rem 2rem;
     font-size: 1rem;
+    transition: .5s;
     
 }
 a:hover{
@@ -40,8 +41,12 @@ h1{
     
 }
 h2{
+    font-size: 3rem;
+}
+.quote{
     margin-top: 40%;
     margin-bottom: 40%;
+    font-size: 1rem;
 }
 
 .body{
@@ -66,6 +71,7 @@ h2{
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* TODO: Add animation to sun and its rays */
 }
 
 .sunray{
@@ -91,21 +97,130 @@ h2{
 }
 
 .cld1{
-    top: 50%;
+    margin-top: 10%;
     left: 20%;
     transform: translate(-50%, -50%);
 }
 .cld2{
-    top: 20%;
+    margin-top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .cld3{
-    top: 30%;
+    margin-top: 6%;
     left: 70%;
     transform: translate(-50%, -50%);
 }
 
-.boarder{
-    box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
+/* Quotes and Clouds */
+.cloud{
+    position: absolute
+    /* TODO: Add animation to Clouds */
 }
+.clouds .cld2{
+    margin-top: -10%;
+    left: 80%;
+}
+
+.border{
+    box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
+    background-image: url("assets/bodyboarder.png");
+    background-repeat: no-repeat;
+}
+/* Developer Skills */
+
+.title{
+    padding-top: 6%;
+    padding-bottom: 0%;
+}
+.title h2{
+    margin: -1%;
+}
+
+.developer-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-evenly;
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+
+}
+.developer-skills h3{
+    font-size: 2rem;
+    
+}
+
+.developer-skills > div {
+    text-align: center;
+    box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    background-image: url("assets/bodyboarder.png");
+  }
+
+  hr{
+    width:80%;
+    background-color: #23F788;
+    display: block;
+    height: .1rem;
+    border: 0; 
+  }
+
+  ul{
+      
+    text-align: left;
+    padding: 0% 10%;
+    list-style-type: square;
+  }
+  
+/* Featured Projects */
+.featured-projects{
+    padding-bottom: .1rem;
+}
+
+.project{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-content: space-evenly;
+    grid-gap: 1.5rem;
+    content: center;
+    margin: 2rem;
+    padding: 2rem;
+    
+}
+.project > div{
+    margin: auto;
+}
+.project > img{
+    width: 10rem;
+    margin: auto;
+}
+
+/* About Me */
+
+.accordion {
+    background-color: #636363;
+    box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    padding: 1rem;
+    margin: .5rem;
+    width: 90%;
+    border: none;
+    text-align: left;
+    transition: .5s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #424242;
+  }
+  
+  .panel {
+    padding: 1rem;
+    width: 86%;
+    border: .1rem solid black;
+    display: none;
+    margin: 0 auto;
+    margin-top: -1rem;
+    /* TODO: Add animation to dropdown */
+    transition: .5s;
+  }

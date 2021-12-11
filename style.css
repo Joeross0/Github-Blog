@@ -178,7 +178,10 @@ h2{
 }
 
 .project{
-    border: 1px solid black;
+    background-color: #636363;
+    background-image: url("assets/Navboarder.png");
+    background-repeat: no-repeat;
+    box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-content: space-evenly;
@@ -200,9 +203,14 @@ h2{
 
 .accordion {
     background-color: #636363;
+    background-image: url("assets/Navboarder.png");
+    background-repeat: no-repeat;
     box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    padding: 1rem;
+    color: #23F788;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-top: 1.6rem;
     margin: .5rem;
     width: 90%;
     border: none;
@@ -217,7 +225,7 @@ h2{
   .panel {
     padding: 1rem;
     width: 86%;
-    border: .1rem solid black;
+    box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
     display: none;
     margin: 0 auto;
     margin-top: -1rem;

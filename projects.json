@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "project-title": "Hosting Company Website",
+            "date": "00/00/00",
+            "tags": "HTML, CSS, JavaScript, Webdesign, Digital Art, design",
+            "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
+            "link": ""
+        },
+        {
+            "project-title": "This Blog",
+            "date": "12/11/2021",
+            "tags": "HTML, CSS, JavaScript, Jquery, Webdesign, Digital Art, design",
+            "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
+            "link": ""
+        }
+        ]
+}

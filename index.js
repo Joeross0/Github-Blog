@@ -47,10 +47,14 @@ loadJSON(function(response) {
   // Do Something with the response e.g.
   projects = JSON.parse(response);
   console.log(projects.projects);
-  projects.projects.forEach(project =>
-    {
-      InsertFeaturedProjects(project.title, project.date, project.description, project.caption, project.link)
-    });
+  
+  for (let index = 0; index < 3; index++) {
+    const project = projects.projects[index];
+    InsertFeaturedProjects(project.title, project.date, project.description, project.caption, project.link)
+
+  }
+
+
   let template = document.getElementsByClassName("project")[0];
   template.remove();
 });
@@ -80,28 +84,19 @@ function InsertFeaturedProjects(title, date,description, caption, link){
 }
 
 function Projects(){
-loadJSON(function(response) {
-  // Do Something with the response e.g.
-  projects = JSON.parse(response);
-  console.log(projects.projects);
-  projects.projects.forEach(project =>
-    {
-      let title = project.title;
-      let date = project.date;
-      let tags = project.tags;
-      let description = project.description;
-      let caption = project.caption;
-      let link = project.link;
-
-      console.log(`${title} | ${date} | ${description}`) //DEBUG
-
-
-    });
-});
+  loadJSON(function(response) {
+    // Do Something with the response e.g.
+    projects = JSON.parse(response);
+    console.log(projects.projects);
+    projects.projects.forEach(project =>
+      {
+        InsertFeaturedProjects(project.title, project.date, project.description, project.caption, project.link)
+      });
+    let template = document.getElementsByClassName("project")[0];
+    template.remove();
+  });
 }
-function InsertProjects(title, date, tags, description, caption, link){
-  
-}
+
 
 
 

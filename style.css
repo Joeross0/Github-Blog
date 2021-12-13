@@ -114,11 +114,13 @@ h2{
 }
 
 .moon{
-    top: 40%;
+    
+    top: 30%;
     left: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(60deg);;
     /* TODO: Add animation to sun and its rays */
     animation: moon 1s ease;
+    
 }
 
 @keyframes sun{
@@ -135,7 +137,7 @@ h2{
 }
 @keyframes moon{
     0% {top: 0%;}
-    100% {top: 40%;}
+    100% {top: 30%;}
 }
 .mountain{
     display: block;
@@ -252,7 +254,10 @@ h2{
     background-size: 20px, 20px, 20px, 20px;
     padding: .3rem;
 }
-
+.img-container img{
+    margin: auto;
+  display: block;
+}
 .project{
     background-color: #636363;
     background-image: url("assets/divboarder.png");
@@ -326,3 +331,5 @@ h2{
     /* TODO: Add animation to dropdown */
     transition: .5s;
   }
+  
+  /* PROJECT PAGE */

@@ -90,13 +90,36 @@ function Projects(){
     console.log(projects.projects);
     projects.projects.forEach(project =>
       {
-        InsertFeaturedProjects(project.title, project.date, project.description, project.caption, project.link)
+        InsertProjects(project.title, project.date, project.tags, project.description, project.caption, project.link)
       });
     let template = document.getElementsByClassName("project")[0];
     template.remove();
   });
 }
 
+function InsertProjects(title, date, tags, description, caption, link){
+  let template = document.getElementsByClassName("project")[0];
+  let tempContainer  = template.parentElement;
+  let clone = template.cloneNode(true);
+
+  let stitle = clone.getElementsByTagName("h3")[0]
+  let sdescription = clone.getElementsByTagName("p")[0]
+  let simg = clone.getElementsByTagName("img")[0]
+  let slink = clone.getElementsByTagName("a")[0]
+
+  stitle.innerHTML = title;
+  sdescription.innerHTML = `${date} <br><br> Tags: ${tags} <br><br> ${description} `;
+  simg.src = caption;
+  if(link){
+    slink.href = link
+  }
+  else{
+    slink.parentElement.remove();
+    clone.style = "grid-template-columns: 1fr 3fr;"
+  }
+
+  tempContainer.appendChild(clone);
+}
 
 
 

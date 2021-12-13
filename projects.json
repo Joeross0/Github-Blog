@@ -6,7 +6,7 @@
             "tags": "HTML, CSS, JavaScript, Jquery, Webdesign, Digital Art, design",
             "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
             "caption": "assets/captions/this.JPG",
-            "link": ""
+            "link": "https://joeross0.github.io/Github-Blog/"
         },
         {
             "title": "Hosting Company Website",
@@ -17,11 +17,19 @@
             "link": ""
         },
         {
-            "title": "This Blog",
-            "date": "12/11/2021",
-            "tags": "HTML, CSS, JavaScript, Jquery, Webdesign, Digital Art, design",
-            "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
-            "caption": "assets/captions/this.JPG",
+            "title": "Astroid Remake",
+            "date": "05/11/2021",
+            "tags": "C#, Unity, 2D, Unity2D, Games, Astorids, Remake, Game development, development, design",
+            "description": "This is a group Project I created with a group of friends from a discord. I really enjoyed working. I and the group plan on continueing the project",
+            "caption": "assets/captions/Astroid.JPG",
+            "link": ""
+        },
+        {
+            "title": "Hacking Simulator",
+            "date": "01/11/2021",
+            "tags": "C#, Unity, 2D, Unity2D, Games, Hacking, Simulator, Game development, development, design",
+            "description": "This is a group Project I created with a group of friends from a discord. I really enjoyed working. I and the group plan on continueing the project",
+            "caption": "assets/captions/hacking.png",
             "link": ""
         }
         ]

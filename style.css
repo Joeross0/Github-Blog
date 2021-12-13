@@ -1,8 +1,9 @@
-body{
+html, body{
     background-color: #636363;
     color: #23F788;
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin:0;
+    padding:0;
 }
 a{
     text-decoration: none;
@@ -14,11 +15,17 @@ a{
     padding: .5rem 2rem;
     font-size: 1rem;
     transition: .5s;
+    overflow: hidden;
+    white-space: nowrap;
     
 }
 a:hover{
-    color: white;
+    color: #424242;
     background-color: #23F788;
+}
+nav{
+    padding: .5rem 1rem;
+    transition: .5s;
 }
 .nav{
     position:relative;
@@ -28,6 +35,11 @@ a:hover{
     display: grid;
     grid-template-columns: auto 60%;
     z-index: 1;
+    
+    margin: auto;
+}
+nav:hover{
+    background-color: #424242;
 }
 .navbuttons{
     align-content: center;
@@ -82,6 +94,7 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     /* TODO: Add animation to sun and its rays */
+    animation: sun 1s ease;
 }
 
 .sunray{
@@ -89,15 +102,41 @@ h2{
     top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: sunray 1.1s ease;
 }
 .sunrayoutter
 {
     opacity: 50%;
     top: 64%;
+    animation: sunrayoutter 1.2s ease;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.moon{
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    /* TODO: Add animation to sun and its rays */
+    animation: moon 1s ease;
+}
+
+@keyframes sun{
+    0% {top: 100%;}
+    100% {top: 80%;}
+}
+@keyframes sunray{
+    0% {top: 100%;}
+    100% {top: 76%;}
+}
+@keyframes sunrayoutter{
+    0% {top: 100%;}
+    100% {top: 64%;}
+}
+@keyframes moon{
+    0% {top: 0%;}
+    100% {top: 40%;}
+}
 .mountain{
     display: block;
     width: 100%;
@@ -110,18 +149,34 @@ h2{
     margin-top: 10%;
     left: 20%;
     transform: translate(-50%, -50%);
+    animation: cld1 30s linear 0s infinite alternate;
 }
 .cld2{
     margin-top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: cld2 40s linear 0s infinite alternate;
 }
 .cld3{
     margin-top: 6%;
     left: 70%;
     transform: translate(-50%, -50%);
+    animation: cld3 60s linear 0s infinite alternate;
 }
 
+@keyframes cld1{
+    0% {left: 0%;}
+    100% {left: 20%;}
+}
+@keyframes cld2{
+    0% {left: 20%;}
+    100% {left: 70%;}
+}
+@keyframes cld3{
+    0% {left: 90%;}
+    100% {left: 40%;}
+    
+}
 /* Quotes and Clouds */
 .cloud{
     position: absolute
@@ -165,8 +220,11 @@ h2{
     box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
     padding: 1rem;
     background-image: url("assets/divboarder.png");
+    transition: .5s;
   }
-
+.developer-skills > div:hover{
+    background-color: #424242;
+}
   hr{
     width:80%;
     background-color: #23F788;
@@ -186,6 +244,14 @@ h2{
 .featured-projects{
     padding-bottom: .1rem;
 }
+.featured-projects .img-container{
+    background: url(assets/img-background-tl.png) left top no-repeat,
+                url(assets/img-background-tr.png) right top no-repeat,
+                url(assets/img-background-bl.png) left bottom no-repeat,
+                url(assets/img-background-br.png) right bottom no-repeat;
+    background-size: 20px, 20px, 20px, 20px;
+    padding: .3rem;
+}
 
 .project{
     background-color: #636363;
@@ -199,21 +265,37 @@ h2{
     content: center;
     margin: 2rem;
     padding: 2rem;
-    
+    transition: .5s;
 }
 .project > div{
     margin: auto;
 }
-.project > img{
+.project img{
     width: 10rem;
+    height: 10rem;
     margin: auto;
 }
+.project p {
+    text-align: left;
+}
+.project img:hover{
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+}
+.project:hover {
+    background-color: #424242;
+  }
 
 /* About Me */
 
+.about-me{
+    padding-bottom: 2rem;
+}
+
 .accordion {
     background-color: #636363;
-    background-image: url("assets/divboarder.png");
+    background-image: url("assets/divdropdownboarder.png");
     background-repeat: no-repeat;
     box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -233,12 +315,14 @@ h2{
   }
   
   .panel {
+    
     padding: 1rem;
     width: 86%;
     box-shadow: 9px 10px 7px 1px rgba(0, 0, 0, 0.25);
     display: none;
     margin: 0 auto;
     margin-top: -1rem;
+    
     /* TODO: Add animation to dropdown */
     transition: .5s;
   }

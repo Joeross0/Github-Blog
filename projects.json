@@ -1,17 +1,27 @@
 {
     "projects": [
         {
-            "project-title": "Hosting Company Website",
-            "date": "00/00/00",
-            "tags": "HTML, CSS, JavaScript, Webdesign, Digital Art, design",
-            "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
-            "link": ""
-        },
-        {
-            "project-title": "This Blog",
+            "title": "This Blog",
             "date": "12/11/2021",
             "tags": "HTML, CSS, JavaScript, Jquery, Webdesign, Digital Art, design",
             "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
+            "caption": "assets/captions/this.JPG",
+            "link": ""
+        },
+        {
+            "title": "Hosting Company Website",
+            "date": "11/20/2021",
+            "tags": "HTML, CSS, JavaScript, Webdesign, Digital Art, design",
+            "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
+            "caption": "assets/captions/hosting-group-company.JPG",
+            "link": ""
+        },
+        {
+            "title": "This Blog",
+            "date": "12/11/2021",
+            "tags": "HTML, CSS, JavaScript, Jquery, Webdesign, Digital Art, design",
+            "description": "This is a group Project I created with a group of friends from my computerscience class. We all put a lot of time and effort into the project and really enjoyed it.",
+            "caption": "assets/captions/this.JPG",
             "link": ""
         }
         ]

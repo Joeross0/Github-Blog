@@ -332,4 +332,27 @@ h2{
     transition: .5s;
   }
   
+  .footer{
+    position:relative;
+    /*border: 1px solid black; */
+    background-image: url("assets/Navboarder.png");
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto 60%;
+    z-index: 1;
+    
+    margin: auto;
+  }
+
+  .footer >h3 {
+    margin: 0.01rem;
+    padding: 0.4rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  .footer .navbuttons{
+      padding-bottom: 2rem;
+  }
+  
   /* PROJECT PAGE */
